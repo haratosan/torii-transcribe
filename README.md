@@ -12,7 +12,7 @@ Clone this repo into your Torii extensions directory:
 
 ```sh
 cd torii/extensions
-git clone <url> torii-transcribe
+git clone https://github.com/haratosan/torii-transcribe.git
 ```
 
 Torii will automatically detect the extension on the next start.
