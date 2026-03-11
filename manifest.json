@@ -3,7 +3,7 @@
   "description": "Transcribes an audio file to text using Whisper.",
   "version": "0.1.0",
   "type": "command",
-  "command": "/opt/homebrew/bin/whisper {{file_path}} --model ${TORII_WHISPER_MODEL:-base} --output_format txt --output_dir /tmp && cat /tmp/$(basename {{file_path}} .ogg).txt && rm -f /tmp/$(basename {{file_path}} .ogg).txt",
+  "command": "PATH=/opt/homebrew/bin:$PATH /opt/homebrew/bin/whisper {{file_path}} --model ${TORII_WHISPER_MODEL:-base} --output_format txt --output_dir /tmp && cat /tmp/$(basename {{file_path}} .ogg).txt && rm -f /tmp/$(basename {{file_path}} .ogg).txt",
   "parameters": {
     "type": "object",
     "properties": {
